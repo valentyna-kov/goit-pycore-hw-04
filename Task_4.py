@@ -34,8 +34,8 @@ def add_contact(args:tuple[str, ...] , contacts: dict)-> str:
     
     name, phone = args
     if name in contacts:
-        user_result = input(f"With this phone number: {contacts[name]} a Contact {name} exists. Type 'Yes' to update the Contact's phone number. Type 'No' to keep the Contact as is").strip().lower()   
-        if user_result != 'Yes': 
+        user_result = input(f"With this phone number: {contacts[name]} a Contact {name} exists. Type 'Yes' to update the Contact's phone number. Type 'No' to keep the Contact as is ").strip().lower()   
+        if user_result != 'yes': 
             return " "
         else:
             contacts[name] = phone
